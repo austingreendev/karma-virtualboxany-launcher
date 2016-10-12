@@ -26,7 +26,9 @@ customLaunchers: {
         config: {
             vm_name: 'IE10 - Win7', // required - name of the VM to target
             use_gui: false, // optional - allows VM to start headless
-            cmd: 'C:\\Program Files\\Internet Explorer\\iexplore.exe' // required - can be a path to any browser
+            cmd: 'C:\\Program Files\\Internet Explorer\\iexplore.exe' // required - can be a path to any browser,
+            user: 'IEUser', // optional - defaults to those provided with Modern.IE vm's
+            password: 'Passw0rd!' // optional - defaults to those provided with Modern.IE vm's
         }
     },
     // This isn't limited to IE only. Manually open a VM and install any browser you would like to test.
@@ -34,7 +36,6 @@ customLaunchers: {
         base: 'VirtualBoxAny',
         config: {
             vm_name: 'IE10 - Win7', // required - name of the VM to target
-            use_gui: false, // optional - allows VM to start headless
             cmd: 'C:\\Program Files\\Mozilla Firefox\\firefox.exe' // required - can be a path to any browser
         }
     },
