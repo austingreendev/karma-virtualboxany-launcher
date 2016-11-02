@@ -1,8 +1,14 @@
 {
   "name": "karma-virtualboxany-launcher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A karma launcher for any virtualbox browser",
-  "keywords": ["virtualbox", "karma", "launcher", "IE", "browser"],
+  "keywords": [
+    "virtualbox",
+    "karma",
+    "launcher",
+    "IE",
+    "browser"
+  ],
   "homepage": "https://github.com/austin94/karma-virtualboxany-launcher",
   "bugs": "https://github.com/austin94/karma-virtualboxany-launcher/issues",
   "main": "index.js",
@@ -11,13 +17,13 @@
   },
   "author": "Austin Green <austingreenkansas@gmail.com> (http://austingreen.info)",
   "license": "MIT",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/austin94/karma-virtualboxany-launcher.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austin94/karma-virtualboxany-launcher.git"
   },
   "dependencies": {
     "lodash": "~2.4.1",
-    "virtualbox": "github:node-virtualization/node-virtualbox#vbox5"
+    "virtualbox": "^0.1.3"
   },
   "peer-dependencies": {
     "karma": "^0.10.9"
