@@ -27,6 +27,7 @@ customLaunchers: {
             vm_name: 'IE10 - Win7', // required - name of the VM to target
             use_gui: false, // optional - allows VM to start headless
             cmd: 'C:\\Program Files\\Internet Explorer\\iexplore.exe' // required - can be a path to any browser,
+            shutdown: false, // Whether or not to shut down the VM when complete
             user: 'IEUser', // optional - defaults to those provided with Modern.IE vm's
             password: 'Passw0rd!' // optional - defaults to those provided with Modern.IE vm's
         }
@@ -48,4 +49,4 @@ browsers: ['virtualIE10', 'virtualFirefox'],
 ```
 ## Limitations / Known Issues
 * This may not work with VM's that are not Windows based
-* After Karma is stopped the VM's are left open.  This is on purpose to allow tests to be re-ran quickly.
+* After Karma is stopped the VM's are left open unless the `shutdown` option is set to `true` in the configuration.  This is on purpose to allow tests to be re-ran quickly.
