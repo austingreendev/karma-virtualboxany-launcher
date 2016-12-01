@@ -77,6 +77,20 @@ function VirtualBoxAnyInstance(baseBrowserDecorator, logger, args) {
         }
       });
     };
+
+    this.on('kill', function (done) {
+        if (!args.config.shutdown) {
+            return
+        }
+
+        virtualbox.acpipowerbutton(args.config.vm_name, function(err){
+            if (err) {
+                log.debug(err)
+            }
+
+            done()
+        })
+    })
 }
 
 VirtualBoxAnyInstance.$inject = ['baseBrowserDecorator', 'logger', 'args'];
