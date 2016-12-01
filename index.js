@@ -80,6 +80,7 @@ function VirtualBoxAnyInstance(baseBrowserDecorator, logger, args) {
 
     this.on('kill', function (done) {
         if (!args.config.shutdown) {
+            done();
             return;
         }
 
